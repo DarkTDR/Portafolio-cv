@@ -758,6 +758,16 @@ body::-webkit-scrollbar-thumb {
   .head .logo__text .text__portafolio {
     font-size: 22px;
   }
+  .head .logo__text .text__portafolio i {
+    color: #FF5393;
+    transition: color 300ms;
+  }
+  .head .logo__text .text__portafolio:hover i {
+    color: #fc7eac;
+  }
+  .head .logo__text::after {
+    width: 100%;
+  }
   .presentacion {
     width: 380px;
     margin-top: 80px;
@@ -785,6 +795,12 @@ body::-webkit-scrollbar-thumb {
   .about__me .titulo {
     margin-bottom: 30px;
   }
+  .about__me .titulo .encabezado::after {
+    width: 94%;
+  }
+  .about__me .titulo .encabezado:hover::after {
+    width: 94%;
+  }
   .descripcion {
     width: 291px;
   }
@@ -801,6 +817,9 @@ body::-webkit-scrollbar-thumb {
   }
   .skills .titulo .encabezado {
     font-size: 20px;
+  }
+  .skills .titulo .encabezado::after {
+    width: 100%;
   }
   .container__box {
     max-width: 95%;
@@ -826,6 +845,9 @@ body::-webkit-scrollbar-thumb {
   }
   .centrar .titulo .encabezado {
     font-size: 20px;
+  }
+  .centrar .titulo .encabezado::after {
+    width: 100%;
   }
   .centrar .contact .contact-details .contact-details-group {
     font-size: 16px;
