@@ -32,9 +32,6 @@ body::-webkit-scrollbar-thumb {
   font-size: 30px;
   color: #2F2E41;
   z-index: 120000;
-  position: fixed;
-  right: 105px;
-  top: 35px;
 }
 
 .head {
@@ -562,9 +559,6 @@ body::-webkit-scrollbar-thumb {
   }
 }
 @media (max-width: 900px) {
-  body {
-    overflow-x: hidden;
-  }
   .presentacion {
     width: 720px;
   }
@@ -589,27 +583,33 @@ body::-webkit-scrollbar-thumb {
   }
 }
 @media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
   .animado {
     opacity: 1;
     transition: opacity 0.5s;
   }
   .nav-toggle {
     display: block;
+    position: absolute;
+    top: 35px;
+    right: 40px;
   }
   .head {
-    background-color: #ffffff;
+    padding: 0 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
     flex-direction: row;
     gap: 160px;
-    width: 740px;
+    width: 100%;
     margin: auto;
-    padding-left: 100px;
     height: 100px;
     position: fixed;
     top: 0;
+    left: 0;
     z-index: 180000;
   }
   .head .nav__menu {
@@ -642,9 +642,9 @@ body::-webkit-scrollbar-thumb {
     left: 0;
   }
   .presentacion {
-    width: 420px;
+    width: 370px;
     margin-top: 80px;
-    margin-bottom: 240px;
+    margin-bottom: 220px;
     gap: 60px;
     flex-direction: column;
   }
@@ -658,20 +658,20 @@ body::-webkit-scrollbar-thumb {
   .presentacion .console-container {
     font-size: 15px;
     top: 243.5px;
-    left: 180px;
+    left: 154px;
   }
   .empty,
 .line {
     display: none;
   }
   .about__me {
-    width: 420px;
+    width: 360px;
     margin: auto;
     margin-bottom: 140px;
     flex-direction: column;
   }
   .about__me .titulo {
-    margin-bottom: 60px;
+    margin-bottom: 50px;
     left: 1px;
   }
   .about__me .titulo .encabezado {
@@ -688,16 +688,18 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
   }
   .descripcion {
-    width: 280px;
+    width: 80%;
     margin: auto;
     display: flex;
     flex-direction: column;
     gap: 55px;
   }
   .descripcion .about .sub__paragraph {
+    font-size: 14px;
     text-align: center;
   }
   .descripcion .about .sub__title {
+    font-size: 18px;
     text-align: center;
   }
   .skills {
@@ -710,12 +712,15 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
   }
   .container__box {
-    max-width: 480px;
+    width: 460px;
     gap: 10px;
   }
   .container__box .box {
-    width: 204px;
-    height: 190px;
+    width: 160px;
+    height: 150px;
+  }
+  .container__box .box .sub__title {
+    bottom: 30px;
   }
   .contact {
     width: 300px;
@@ -736,59 +741,106 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
     justify-content: center;
   }
+  .footer .footer__text {
+    font-size: 12px;
+  }
 }
 @media (max-width: 520px) {
   .nav-toggle {
     display: block;
-    font-size: 28px;
+    font-size: 22px;
     right: 40px;
-    top: 35px;
+    top: 40px;
   }
   .head {
-    width: 90%;
-    margin: auto;
-    padding-left: 40px;
     height: 100px;
   }
   .head .logo__text .text__portafolio {
-    font-size: 28px;
+    font-size: 22px;
   }
-  .container__box {
-    max-width: 390px;
-    gap: 10px;
+  .presentacion {
+    width: 380px;
+    margin-top: 80px;
+    margin-bottom: 220px;
+    gap: 60px;
+    flex-direction: column;
   }
-  .container__box .box {
-    width: 180px;
-    height: 150px;
+  .presentacion .undraw .image {
+    width: 190px;
   }
-  .footer p {
-    font-size: 12px;
+  .presentacion .texto__one,
+.presentacion .texto__two {
+    font-size: 20px;
   }
-}
-@media (max-width: 460px) {
-  .head {
-    width: 80%;
+  .presentacion .console-container {
+    font-size: 13px;
+    top: 235px;
+    left: 164px;
   }
-  .skills {
-    width: 80%;
+  .about__me {
+    width: 380px;
+    margin: auto;
+    margin-bottom: 80px;
   }
-  .container__box {
+  .about__me .titulo {
+    margin-bottom: 30px;
+  }
+  .descripcion {
+    width: 291px;
+  }
+  .descripcion .about {
+    font-size: 16px;
     width: 70%;
+    margin: auto;
+  }
+  .descripcion .about .sub__paragraph {
+    font-size: 14px;
+  }
+  .descripcion .about .sub__title {
+    font-size: 14px;
+  }
+  .skills .titulo .encabezado {
+    font-size: 20px;
+  }
+  .container__box {
+    max-width: 95%;
     gap: 10px;
   }
   .container__box .box {
-    width: 160px;
-    height: 130px;
-    margin: 10px 0;
+    margin-top: 10px;
+    width: 140px;
+    height: 120px;
   }
   .container__box .box .sub__title {
     bottom: 20px;
   }
+  .container__box .box i {
+    padding-top: 10px;
+    font-size: 50px;
+    color: #FF5393;
+  }
   .centrar {
-    width: 80%;
+    width: 300px;
+    margin: auto;
+    margin-top: 140px;
+  }
+  .centrar .titulo .encabezado {
+    font-size: 20px;
+  }
+  .centrar .contact .contact-details .contact-details-group {
+    font-size: 16px;
+  }
+  .centrar .contact .social .social-list li a i {
+    font-size: 26px;
+  }
+  .centrar .contact .contact-form .contact-form-group {
+    font-size: 16px;
   }
   .footer {
-    width: 80%;
+    width: 100%;
+  }
+  .footer p {
+    font-size: 12px;
   }
 }
 /*MEDIA QUERYS - FINAL*/

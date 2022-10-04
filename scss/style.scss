@@ -55,10 +55,6 @@ body::-webkit-scrollbar {
     font-size: 30px;
     color: $colorPrimario;
     z-index: 120000;
-
-    position: fixed;
-    right: 105px;
-    top: 35px;
 }
 
 .head{
@@ -618,10 +614,6 @@ body::-webkit-scrollbar {
 }
 
 @media (max-width: 900px){
-
-    body{
-        overflow-x: hidden;
-    }
     
     .presentacion{
         width: 720px; 
@@ -652,6 +644,10 @@ body::-webkit-scrollbar {
 
 @media (max-width: 768px){
 
+    body{
+        overflow-x: hidden;
+    }
+
     .animado{
         opacity: 1;
         transition: opacity .5s;
@@ -659,20 +655,23 @@ body::-webkit-scrollbar {
 
     .nav-toggle{
         display: block;
+        position: absolute;
+        top: 35px;
+        right: 40px;
     }
 
 
     .head{
-        background-color: $colorTerciario;
+        padding: 0 40px;
         @include flexible(space-between, center, nowrap);
         flex-direction: row;
         gap: 160px;
-        width: 740px;
+        width: 100%;
         margin: auto;
-        padding-left: 100px;
         height: 100px;
         position: fixed;
         top: 0;
+        left: 0;
         z-index: 180000;
         .nav__menu{
             z-index: 100000;
@@ -707,9 +706,9 @@ body::-webkit-scrollbar {
 
 
     .presentacion{
-        width: 420px; 
+        width: 370px; 
         margin-top: 80px;
-        margin-bottom: 240px;
+        margin-bottom: 220px;
         gap: 60px;
         flex-direction: column;
      
@@ -725,7 +724,7 @@ body::-webkit-scrollbar {
         .console-container{
             font-size: 15px;
             top: 243.5px;
-            left: 180px;
+            left: 154px;
         }
     }    
 
@@ -735,18 +734,17 @@ body::-webkit-scrollbar {
     }
 
     .about__me{
-        width: 420px;
+        width: 360px;
         margin: auto;
         margin-bottom: 140px;
         flex-direction: column;
         .titulo{
-            margin-bottom: 60px;
+            margin-bottom: 50px;
             left: 1px;
             .encabezado{
                 width: 130px;
                 margin: auto;
                 i{
-              
                     margin-left: .5px;                  
                 }
                 &::after{
@@ -760,16 +758,18 @@ body::-webkit-scrollbar {
     }
 
     .descripcion{
-        width: 280px;
+        width: 80%;
         margin: auto;
         display: flex;
         flex-direction: column;
         gap: 55px;
         .about{
             .sub__paragraph{
+                font-size: 14px;
                 text-align: center;
             }
             .sub__title{
+                font-size: 18px;
                 text-align: center;
             }
         }
@@ -791,11 +791,14 @@ body::-webkit-scrollbar {
     }
     
     .container__box{
-        max-width: 480px;
+        width: 460px;
         gap: 10px;
         .box{
-            width: 204px;
-            height: 190px;
+            width: 160px;
+            height: 150px;
+            .sub__title{
+                bottom: 30px;
+            }
         }
     }
 
@@ -825,7 +828,11 @@ body::-webkit-scrollbar {
         }
     }
     
-
+    .footer{
+        .footer__text{
+            font-size: 12px;
+        }
+    }
 
 }
 
@@ -833,34 +840,133 @@ body::-webkit-scrollbar {
 
     .nav-toggle{
         display: block;
-        font-size: 28px;
+        font-size: 22px;
         right: 40px;
-        top: 35px;
+        top: 40px;
     }
 
     .head{  
-        width: 90%;
-        margin: auto;
-        padding-left: 40px;
         height: 100px;
         .logo__text{
             .text__portafolio{
-                font-size: 28px;
+                font-size: 22px;
             }
         } 
     }
 
+    .presentacion{
+        width: 380px; 
+        margin-top: 80px;
+        margin-bottom: 220px;
+        gap: 60px;
+        flex-direction: column;
+     
+        .undraw{
+            .image{
+                width: 190px;
+            }
+        }
+        .texto__one,
+        .texto__two{
+            font-size: 20px;
+        }
+        .console-container{
+            font-size: 13px;
+            top: 235px;
+            left: 164px;
+        }
+    }    
+
+
+
+    .about__me{
+        width: 380px;
+        margin: auto;
+        margin-bottom: 80px;
+        .titulo{
+            margin-bottom: 30px;
+        }
+    }
+    
+
+    .descripcion{
+        width: 291px;
+        .about{    
+            font-size: 16px;
+            width: 70%;
+            margin: auto;
+            .sub__paragraph{
+                font-size: 14px;
+            }
+            .sub__title{
+                font-size: 14px;
+            }
+        }
+    }
+
+
+    .skills{
+        .titulo{
+            .encabezado{
+                font-size: 20px;
+            }
+        }
+    }
 
     .container__box{
-        max-width: 390px;
+        max-width: 95%;
         gap: 10px;
         .box{
-            width: 180px;
-            height: 150px;
+            margin-top: 10px;
+            width: 140px;
+            height: 120px;
+            .sub__title{
+                bottom: 20px;
+            }
+            i{
+                padding-top: 10px;
+                font-size: 50px;
+                color: $colorCuarteto;
+            }
+        }
+    }
+
+    .centrar{
+        width: 300px;
+        margin: auto;
+        margin-top: 140px;
+        .titulo{
+            .encabezado{
+                font-size: 20px;
+            }
+        }
+        .contact{
+            .contact-details{
+                .contact-details-group{
+                    font-size: 16px;
+                }
+            }
+            .social{
+                .social-list{
+                    li{
+                        a{
+                            i{
+                                font-size: 26px;
+                            }
+                        }
+                    }
+                }
+            }
+            .contact-form{
+                .contact-form-group{
+                    font-size: 16px;
+                }
+            }
         }
     }
 
     .footer{
+        width: 100%;
         p{
             font-size: 12px;
         }
@@ -868,38 +974,6 @@ body::-webkit-scrollbar {
 
 }
 
-
-@media (max-width: 460px){
-
-    .head{
-        width: 80%;
-    }
-
-    .skills{
-        width: 80%;
-    }
-    
-    .container__box{
-        width: 70%;
-        gap: 10px;
-        .box{
-            width: 160px;
-            height: 130px;
-            margin: 10px 0;
-            .sub__title{             
-                bottom: 20px;
-            }
-        }
-    }
-
-    .centrar{
-        width: 80%;
-    }
-
-    .footer{
-        width: 80%;
-    }
-}
 
 /*MEDIA QUERYS - FINAL*/
 
