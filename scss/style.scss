@@ -839,7 +839,8 @@ body::-webkit-scrollbar {
     }
 
     .head{  
-        width: 540px;
+        width: 460px;
+        margin: auto;
         padding-left: 40px;
         height: 100px;
         .logo__text{
@@ -870,6 +871,10 @@ body::-webkit-scrollbar {
 
 @media (max-width: 460px){
 
+    .head{
+        width: 420px;
+    }
+    
     .skills{
         width: 420px;
     }
@@ -895,8 +900,6 @@ body::-webkit-scrollbar {
         width: 420px;
     }
 }
-
-
 
 /*MEDIA QUERYS - FINAL*/
 
