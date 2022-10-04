@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./scss/style.css">
+
+    <title>Portafolio - Nicolas Ayala</title>
+
+    <script defer src="./js/app.js"></script>
+</head>
+<body>
+
+    <!--::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::-->
+
+    <!-- ENCABEZADO -->
+    <header class="head">
+
+         <!-- ENCABEZADO - LOGO TEXTO -->
+
+        <div class="logo__text">
+            <h1 class="text__portafolio">Portafolio <i class="fa-regular fa-lightbulb"></i></h1>
+        </div>
+
+          <!-- ENCABEZADO - MENÚ DE NAVEGACIÓN -->
+
+        <nav class="nav__menu">
+
+            <button class="nav-toggle"><i class="fa-solid fa-bars"></i></button>  
+
+            <ul class="nav__ul">
+    
+                <li class="list">
+                    <a href="./index.html" class="link">Home</a>
+                </li>
+                <li class="list">
+                    <a href="#about" class="link">About me</a>
+                </li>
+                <li class="list">
+                    <a href="#skills" class="link">Skills</a>
+                </li>
+                <li class="list">
+                    <a href="#proximamente" class="link">Works</a>
+                </li>
+                <li class="list">
+                    <a href="#contact" class="link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!--::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::-->
+
+     <!-- PRESENTACIÓN -->
+    <section class="presentacion">
+
+        <!-- PRESENTACIÓN - IMAGEN -->
+        <div class="undraw">
+            <img class="image" src="./img/programming.svg" alt="programming_portafolio">
+        </div>
+
+        <!-- PRESENTACIÓN - TEXTO -->
+        <div class="parte__texto">
+
+            <h2 class="texto__one">¡Hola, soy <span class="texto__span">Nicolas Ayala</span></h2>
+            <h2 class="texto__two">Y soy un </h2>
+
+            <!-- PRESENTACIÓN - TEXTO EN MOVIMIENTO -->
+            <div class='console-container'>
+                <h2 id='text'></h2>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::-->
+
+    <section class="about__me" id="about">
+
+        <div class="titulo">
+            <h2 class="encabezado">Sobre mi <i class="fa-solid fa-user"></i></h2>
+        </div>
+
+        <div class="descripcion animado">
+
+            <div class="empty"></div>
+            <div class="line"></div>
+
+            <div class="about animado">
+                <h3 class="sub__title">Informacion Personal <i class="fa-regular fa-address-card"></i></h3>
+                <p class="sub__paragraph">Mi nombre completo es Nicolas Daniel Llorens Ayala, tengo 19 años de edad, desde chico interaso a todo lo relacionado con la tecnologia y diseño.</p>
+            </div>
+
+            <div class="about animado">
+                <h3 class="sub__title">Experiencia <i class="fa-regular fa-folder-open"></i></h3>
+                <p class="sub__paragraph">Apacionado por la arquitectura, desarrollo y diseño web en general, con más de 3 años de experiencia en diseño y 2 año en Desarrollo Web para empresas locales.</p>
+            </div>
+
+            <div class="line"></div>
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="line"></div>
+
+            <div class="about animado">
+                <h3 class="sub__title">Visión <i class="fa-regular fa-eye"></i></h3>
+                <p class="sub__paragraph">Incrementar y Perfeccionar mis habilidades en el Frontend & Backend, para así poder llegar a ser un profesional en el área de Diseño y Desarrollo Web.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::-->
+
+     <!--HABILIDADES-->
+    <section class="skills animado" id="skills">
+
+        <!--HABILIDADES - TITULO -->
+        <div class="titulo">
+            <h2 class="encabezado">Habilidades <i class="fa-solid fa-code"></i></h2>
+        </div>
+
+        <!--HABILIDADES - CAJAS -->
+        <div class="container__box">
+
+            <div class="box">
+                <!--HABILIDADES - CAJAS / ICONOS Y TEXTO-->
+                <i class="fa-brands fa-html5"></i>
+                <h5 class="title">HTML</h5>
+                <h4 class="sub__title">HTML</h4>
+            </div>
+
+            <div class="box">
+                <!--HABILIDADES - CAJAS / ICONOS Y TEXTO-->
+                <i class="fa-brands fa-css3"></i>
+                <h5 class="title">CSS</h5>
+                <h4 class="sub__title">CSS</h4>
+            </div>
+
+            <div class="box">
+                <!--HABILIDADES - CAJAS / ICONOS Y TEXTO-->
+                <i class="fa-brands fa-square-js"></i>
+                <h5 class="title">JavaScript</h5>
+                <h4 class="sub__title">JavaScript</h4>
+            </div>
+
+            <div class="box">
+                <!--HABILIDADES - CAJAS / ICONOS Y TEXTO-->
+                <i class="fa-brands fa-sass"></i>
+                <h5 class="title">Sass</h5>
+                <h4 class="sub__title">Sass</h4>
+            </div>
+
+            <div class="box">
+                <!--HABILIDADES - CAJAS / ICONOS Y TEXTO-->
+                <i class="fa-brands fa-less"></i>
+                <h5 class="title">Less</h5>
+                <h4 class="sub__title">Less</h4>
+            </div>
+
+            <div class="box">
+                <!--HABILIDADES - CAJAS / ICONOS Y TEXTO-->
+                <i class="fa-brands fa-bootstrap"></i>
+                <h5 class="title">Bootstrap</h5>
+                <h4 class="sub__title">Bootstrap</h4>
+            </div>
+           
+        </div>
+
+    </section>
+
+    <!--::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::-->
+
+        <!--Contacto-->
+
+        <div class="centrar">
+            <div class="titulo">
+                <h2 class="encabezado">Contacto <i class="fa-regular fa-message"></i></h2>
+            </div>
+
+            <section class="contact" id="contact">
+
+                <div class="contact-details">
+                    <div class="contact-details-group">
+                      <p class="contact-label">Dirección:</p>
+                      <p class="contact-text">Ciudad del Este, Paraguay</p>
+                    </div>
+        
+                    <div class="contact-details-group">
+                      <p class="contact-label">Email:</p>
+                      <p class="contact-text">nicolasdaniel070@gmail.com</p>
+                    </div>
+        
+                    <div class="contact-details-group">
+                      <p class="contact-text">
+                        Deje su mensaje y con gusto <br> le responderé.
+                      </p>
+                    </div>
+        
+                    <nav class="social">
+        
+                        <ul class="social-list">
+            
+                          <li>
+                            <a href="https://www.instagram.com/nicolasdam070/" class="social-link">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                          </li>
+            
+                          <li>
+                            <a href="https://www.facebook.com/nicolas.daniel.5895834" class="social-link">
+                                <i class="fa-brands fa-square-facebook"></i>
+                            </a>
+                          </li>
+            
+                          <li>
+                            <a href="https://api.whatsapp.com/send?phone=595971302569&text=Hola" class="social-link">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                          </li>
+            
+                          <li>
+                            <a href="#" class="social-link" class="social-link">
+                            <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                          </li>
+            
+                        </ul>
+                    </nav>
+            
+                </div>
+        
+                <form class="contact-form">
+        
+                    <div class="contact-form-group">
+                      <label for="name">Nombre</label>
+                      <input required type="text" name="name" id="name" />
+                    </div>
+        
+                    <div class="contact-form-group">
+                      <label for="email">Email</label>
+                      <input required type="email" name="email" id="email" />
+                    </div>
+        
+                    <div class="contact-form-group">
+                      <label for="message">Mensaje</label>
+                      <textarea required name="message" id="message" rows="6"></textarea>
+                    </div>
+          
+                    <button type="submit" class="submit">Enviar</button>
+                </form>
+        
+                </section>
+
+        </div>
+
+    <!--::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::-->
+
+    <footer class="footer">
+        <p class="footer__text">Todos los derechos reservados © 2022 Nicolas Ayala</p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/9a7c625dd7.js" crossorigin="anonymous"></script>
+</body>
+</html>
