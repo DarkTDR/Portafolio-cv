@@ -745,7 +745,7 @@ body::-webkit-scrollbar-thumb {
     top: 35px;
   }
   .head {
-    width: 460px;
+    width: 80%;
     margin: auto;
     padding-left: 40px;
     height: 100px;
@@ -767,13 +767,13 @@ body::-webkit-scrollbar-thumb {
 }
 @media (max-width: 460px) {
   .head {
-    width: 420px;
+    width: 80%;
   }
   .skills {
-    width: 420px;
+    width: 80%;
   }
   .container__box {
-    width: 360px;
+    width: 70%;
     gap: 10px;
   }
   .container__box .box {
@@ -785,10 +785,10 @@ body::-webkit-scrollbar-thumb {
     bottom: 20px;
   }
   .centrar {
-    width: 420px;
+    width: 80%;
   }
   .footer {
-    width: 420px;
+    width: 80%;
   }
 }
 /*MEDIA QUERYS - FINAL*/
